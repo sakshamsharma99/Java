@@ -21,18 +21,19 @@ class Solution {
 
 class Main {
     public static void main(String[] args) {
+        System.out.println("\nCheck whether a Palindrome Or Not\n");
         Scanner sc = new Scanner(System.in);
         Solution s = new Solution();
-        System.out.print("Enter Number: ");
+        System.out.print("Input: ");
         int number = sc.nextInt();
 
         boolean answer = s.isPalindrome(number);
         if(answer == true)
         {
-            System.out.printf("true\n%d reads as %d from left to right and from right to left.",number,number);
+            System.out.printf("Output: true\nExplanation: %d reads as %d from left to right and from right to left.",number,number);
         }else
         {
-            System.out.printf("false\nFrom left to right, it reads %d. From right to left, it becomes %d. Therefore it is not a palindrome.",number,number);
+            System.out.printf("Output: false\nExplanation: From left to right, it reads %d. From right to left, it becomes %d. Therefore it is not a palindrome.",number,number);
         }
     }
 }
